@@ -56,6 +56,9 @@ ssldir=/var/lib/puppet/ssl
 rundir=/var/run/puppet
 factpath=$vardir/lib/facter
 basemodulepath=$confdir/modules
+
+keylength=1024
+
 <% if puppetmaster_environments_enabled %>
 environmentpath=$confdir/environments/
 <% else %>
