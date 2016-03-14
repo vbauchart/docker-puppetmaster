@@ -25,7 +25,7 @@ puppet_templates_dir              = "#{puppet_conf_dir}/templates"
 puppetmaster_port                 = ENV.fetch("PUPPETMASTER_TCP_PORT", "8140")
 puppetmaster_verbose              = ENV.fetch("PUPPETMASTER_VERBOSE", nil)
 puppetmaster_debug                = ENV.fetch("PUPPETMASTER_DEBUG", nil)
-puppetmaster_environments_enabled = ENV.fetch("PUPPETMASTER_ENVIRONMENTS_ENABLED", nil)
+puppetmaster_environments_enabled = ENV.fetch("PUPPETMASTER_ENVIRONMENTS_ENABLED", 1)
 
 passenger_conf_file      = "/usr/share/puppet/rack/puppetmaster/config.ru" 
 
